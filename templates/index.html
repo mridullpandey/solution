@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 {text-align: center;}
+        
+        </style>
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1>Assignment Solution by mridulpandey</h1>
+
+            <h3><u>Requirements</u></h3>
+            <ul>
+                <li>python==3.6 or greater versions</li>
+                <li>Django==4.0.3</li>
+                <li>djangorestframework==3.13.1</li>
+                <li>djangorestframework-xml==2.0.0</li>
+                <li>Postman Bearer token: b529192bca3358781990af2c1345ac3a9124f746</li>
+                <li>Postman APIurl=http://127.0.0.1:8000/getAddressDetails</li>
+                <li>Pass geocode api key in .env file </li>
+
+            </ul>
+            <h3><u>Steps to configure this locally---:</u></h3>
+            <ul>
+                <li>1.Clone this repository in your system. go inside the folder directory </li>
+                <li>2.Install virtualenv by hitting command: "sudo pip3 install virtualenv" if not installed.</li>
+                <li>3.Create and activate virtual environment</li>
+                <li>4.Install all the required libraries by hitting: "pip install -r requirements.txt"</li>
+                <li>5.Hit : "python3 manage.py drf_create_token admin" to create auth token to be used with postman./li>
+                <li>6.Run django server by hitting: python3 manage.py runserver</li>
+                <li>----Steps to check api in Postman------</li> 
+                <li>1.Send post request at "host/getAddressDetails" to use api</li>
+                <li>2.url: host/getAddressDetails, method: POST, use token for authentication generated in step 5,IN BODY pass 1. "output_format"="xml/json" and 2."address"="pass the address to whom to get lat_long"</li>
+                <li>3.Api designed is  working fine tested on Postman for any queries whatsapp me on : 9415749385</li>
+            </ul>
+
+        </div>
+    </div>
+
+    
+</body>
+</html>
